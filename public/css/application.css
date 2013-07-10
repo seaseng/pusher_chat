@@ -6,6 +6,8 @@
 /*pulse baige: #EEEEEE*/
 /*pulse grey: #29292A*/
 /*pulse off white: #BFDDE3*/
+
+
 html {
   font-size: 100%;
 }
@@ -21,13 +23,14 @@ header{
   background-color: rgba(94, 144, 233, 0.9);
 }
 
-header a {
+.navbar {
   font-size: 1.1em;
   font-weight: bold;
   color: #ecf0f1;
   padding: 0;
   margin: 0 5px;
   text-decoration: none;
+
 }
 
 body {
