@@ -27,6 +27,7 @@ require 'faker'
 require 'bcrypt'
 
 require 'pusher'
+require_relative 'pusher_keys'
 
 
 # Some helper constants for path-centric logic
