@@ -1,7 +1,8 @@
-$(document).ready(function() {
-  // This is called after the document has loaded in its entirety
-  // This guarantees that any elements we bind to will exist on the page
-  // when we try to bind to them
+var pushern = new Pusher('f7c54d873cabf5731219');
+var channel = pusher.subscribe('chat_channel');
 
-  // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+$(document).ready(function() {
+  channel.bind('my-event', function(data) {
+    alert('An event was triggered with message: ' + data.message);
+  });
 });

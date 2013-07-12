@@ -1,7 +1,7 @@
 enable :sessions
 
 get '/' do
-  # Look in app/views/index.erb
+  Pusher['chat_channel_1'].trigger('my-event', {:message => 'hello world'})
   erb :index
 end
 
