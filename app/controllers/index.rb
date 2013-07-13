@@ -11,7 +11,8 @@ post '/pusher/auth' do
       user_id:  current_user.id,
       user_info:  {
       # user_info: {} # optional
-        name: current_user.name
+        name: current_user.name,
+        game_symbol: " "
       }
     })
 
@@ -20,5 +21,5 @@ post '/pusher/auth' do
 end
 
 get '/game' do
-  erb :chat
+  erb :game
 end
